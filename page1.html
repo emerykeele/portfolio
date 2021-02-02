@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Stickers</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="3D & WebGL Background Animations For Your Website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=DM+Serif+Text:ital@1&family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&family=Piedra&family=Ramaraja&family=Roboto:ital,wght@1,700&family=Rozha+One&family=Rye&display=swap" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=DM+Serif+Text:ital@1&family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&family=Piedra&family=Ramaraja&family=Roboto:ital,wght@1,700&family=Rozha+One&family=Rye&display=swap');
+  </style>
+  </head>
+  <link rel="stylesheet" href="style2.css">
+<body>
+<div id='vantajs'>
+<div class= "middle">
+<h1  class="rainbow rainbow_text_animated outline">Stickers</h1>
+</div>
+
+<div id="INLINE_PEN_JS_ID" class= "bbox">
+<div class="box"><a href=https://www.etsy.com/listing/846070196/holographic-tsuintru-ahegao-sticker?ref=shop_home_active_2&crt=1.html><img src="stickers/1.png"></a></div><div class="box"><a href=https://www.etsy.com/listing/859987911/holographic-naifu-satsujin-sticker.html><img src="stickers/2.png"></a></div><div class="box"><a href=https://www.etsy.com/listing/770917971/holographic-neko-ahegao-sticker.html><img src="stickers/3.png"></a></div>
+<div class="box"><a href=https://www.etsy.com/listing/846075090/holographic-inu-ahegao-sticker.html><img src="stickers/4.png"></a></div><div class="box"> <a href=https://www.etsy.com/listing/797009361/holographic-heart-eyes-ahegao-sticker.html> <img src="stickers/5.png"></a></div>
+</div>
+
+<center><div class="scroll">scroll ➟</div>
+
+
+<div class="home"><a href=index.html>Home</a></div></center>
+</div>
+
+
+
+
+<script src="jquery.min.js"></script>
+<script src="sparkle.js"></script>
+  <script src="three.r119.min.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
+  <script src="jquery.mousewheel.min.js"></script>
+
+  <script id="INLINE_PEN_JS_ID">
+    $(document).ready(function () {
+  $('html, *').mousewheel(function (e, delta) {
+    this.scrollLeft -= delta;
+    this.scrollRight -= delta;
+    e.preventDefault();
+  });
+});
+    //# sourceURL=pen.js
+
+  </script>
+
+  <script>
+  VANTA.FOG({
+    el: '#vantajs',
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 1200.00,
+    minWidth: 1700.00,
+    highlightColor: 0xaadbff,
+    midtoneColor: 0xfc7aed,
+    lowlightColor: 0xfffe00,
+    baseColor: 0xe8cee8,
+    blurFactor: 0.90,
+    speed: 2.50,
+    zoom: 1.20
+  })
+  </script>
+
+
+
+
+
+</body>
+
+
+</html>

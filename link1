@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+  <title>emery keele</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="3D & WebGL Background Animations For Your Website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <script src="jquery.min.js"></script>
+  <script src="three.r119.min.js"></script>
+  <script src="p5.min.js"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <!-- <script src="../js/tween.js"></script> -->
+  <!-- <script src="../three/stats.js"></script> -->
+  <!-- <script src="../three/renderstats.js"></script> -->
+
+</head><body>
+
+<div class= "middle">
+<h1  class="rainbow rainbow_text_animated outline">Stickers</h1>
+</div>
+
+<div class= "bbox">
+<div class="box"><img src=""></img></div><div class="box"><img src=""></img></div><div class="box"><img src=""></img> class="box"><img src=""></img> <img src=""></img>
+</div>
+
+
+
+
+    <!-- <div class="arrow">
+      <span class="ent-down-open-big"> </span>
+    </div> -->
+  </section>
+
+
+
+</body>
+<script src="three.r119.min.js"></script>
+<script src="p5.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+<script>
+VANTA.FOG({
+  el: "#media",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x71bef5,
+  midtoneColor: 0xff416e,
+  lowlightColor: 0xfffe00,
+  baseColor: 0xd4b3d4,
+  blurFactor: 0.90,
+  speed: 2.50,
+  zoom: 1.20
+})
+</script>
+
+</html>

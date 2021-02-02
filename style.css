@@ -1,0 +1,243 @@
+
+body{
+  background: rgb(255, 227, 250);
+  overflow: hidden;
+font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: rgb(241, 84, 125);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+  .middle {
+  text-align: center;
+  justify-content: center;
+}
+.outline {
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color:rgb(34, 34, 34, .5);
+
+}
+
+.rainbow {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Rye', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #f293d2, #6666ff , #e0a1fa, #9a5ffa, #f2a5fb, #f293e9, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 20s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+
+a:link {
+  width: 250px;
+ display: flex;
+ justify-content: center;
+text-align: center;
+margin-top: 20px;
+font-size: 45px;
+background-color: rgba(255, 255, 255, 0.35);
+border-style: solid;
+border-color: rgb(255, 0, 245);
+  text-decoration: none;
+  color:#cc00ff;
+}
+
+a:visited {color:#cc00ff;} /* Visited link    */
+
+a:hover {
+  font-size: 70px;
+  color: #cc00ff;
+  width: 400px;
+ display: flex;
+ justify-content: center;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.star{
+max-width: 50px;
+margin-left: 5px;
+margin-right: 5px;
+position:absolute;
+top:50%;
+transform: translateY(-50%);
+left:10px;
+opacity: 0;
+}
+
+
+.bbox {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+ margin-bottom: 35px;
+text-align: center;
+justify-content: center;
+}
+
+
+.box {
+ display: flex;
+ margin-top: 0px;
+  margin-right: 35px;
+  margin-left: 35px;
+text-align: center;
+justify-content: center;
+position: relative;
+}
+  .container .column.clear,
+  .container .columns.clear {
+    clear: both;
+  }
+  .container .column.right,
+  .container .columns.right {
+    float: right;
+  }
+  .container .column.no-float,
+  .container .columns.no-float {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    zoom: 1;
+  }
+
+.box:hover .star{
+  opacity: 1;
+  animation: rotation 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+
+
+
+.ibox{
+  display: flex;
+  margin-top: 300px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+canvas {
+  margin-top: -100px;
+  margin-left: -50px;
+  display: block;
+  animation: fadein 1s;
+  user-select: none;
+}
+
+
+.container {
+  max-width: 1200px;
+}
+.inner {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 1500px;
+}
+.inner.shadow {
+  text-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+}
+
+span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:120px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow:
+						8px 8px #ff1f8f,
+						20px 20px #000000;
+}
+
+
+.example1 {
+ height: 200px;
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 200px;
+ color: limegreen;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ /* line-height: 50px; */
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   {
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);
+ }
+ 100% {
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%);
+ }
+}
