@@ -4,7 +4,6 @@ body{
   overflow: hidden;
   font-family: 'NTR', sans-serif;
   text-transform: uppercase;
-  font-size: 50px;
   color: rgb(241, 84, 125);
   justify-content: center;
   align-items: center;
@@ -12,15 +11,27 @@ body{
   overflow: hidden;
 
 }
+
+.titlebox{
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  border-style: solid;
+  border-color: rgb(255, 0, 245);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1020px;
+  height: 200px;
+  margin-top: 50px;
+
+
+}
+
   .middle {
   text-align: center;
   justify-content: center;
 }
-.outline {
-    -webkit-text-stroke-width: .1px;
-    -webkit-text-stroke-color:rgb(34, 34, 34, .5);
 
-}
 
 .rainbow {
     text-align: center;
@@ -30,7 +41,7 @@ body{
     letter-spacing: 5px;
 }
 .rainbow_text_animated {
-    background: linear-gradient(to right, #f293d2, #6666ff , #e0a1fa, #9a5ffa, #f2a5fb, #f293e9, #6666ff);
+    background: linear-gradient(to right, #f293d2, #6666ff , #e0a1fa, #9a5ffa, #7ce4ff, #6666ff, #f293d2);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -44,16 +55,16 @@ a:link {
  display: flex;
  justify-content: center;
 text-align: center;
-margin-top: 20px;
 font-size: 45px;
+line-height: 130%;
 background-color: rgba(255, 255, 255, 0.35);
 border-style: solid;
 border-color: rgb(255, 0, 245);
   text-decoration: none;
-  color:#cc00ff;
+  color:#8234da;
 }
 
-a:visited {color:#cc00ff;} /* Visited link    */
+a:visited {color:#8234da;} /* Visited link    */
 
 a:hover {
   font-size: 70px;
@@ -62,8 +73,6 @@ a:hover {
  display: flex;
  justify-content: center;
   text-decoration: none;
-  margin-left: 20px;
-  margin-top: 50px;
 }
 
 
@@ -80,11 +89,11 @@ a:hover {
 .star{
 max-width: 50px;
 margin-left: 5px;
-margin-right: 5px;
+margin-right: 100px;
 position:absolute;
-top:50%;
+top:45%;
 transform: translateY(-50%);
-left:10px;
+right:325px;
 opacity: 0;
 }
 
@@ -107,6 +116,7 @@ justify-content: center;
 text-align: center;
 justify-content: center;
 position: relative;
+height: 150px;
 }
   .container .column.clear,
   .container .columns.clear {
@@ -129,6 +139,10 @@ position: relative;
   animation: rotation 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  margin-top: 0px;
+   margin-right: 35px;
+   margin-left: 35px;
+
 
 }
 
@@ -143,14 +157,6 @@ position: relative;
 }
 
 
-
-
-
-
-.ibox{
-  display: flex;
-  margin-top: 100px;
-}
 
 @keyframes fadein {
   0% {

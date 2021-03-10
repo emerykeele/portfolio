@@ -5,18 +5,26 @@
   <meta charset="UTF-8">
   <meta name="description" content="emery keele" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Aladin&family=DM+Serif+Text:ital@1&family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&family=Piedra&family=Ramaraja&family=Roboto:ital,wght@1,700&family=Rozha+One&family=Rye&display=swap" rel="stylesheet">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=NTR&family=Noto+Sans+HK:wght@900&family=Pacifico&family=Work+Sans:ital,wght@1,800&display=swap');
-</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=DM+Serif+Text:ital@1&family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&family=Piedra&family=Ramaraja&family=Roboto:ital,wght@1,700&family=Rozha+One&family=Rye&display=swap" rel="stylesheet">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=NTR&family=Noto+Sans+HK:wght@900&family=Pacifico&family=Work+Sans:ital,wght@1,800&display=swap');
+  </style>
+  <script src="jquery.min.js"></script>
+  <script src="sparkle.js"></script>
+    <script src="three.r119.min.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
   </head>
 
   <link rel="stylesheet" href="style.css">
 <body>
 <div id='vantajs'>
 
-  <h1  class="rainbow rainbow_text_animated outline title">Emery Keele</h1>
 
+<center><div class="titlebox">
+  <h1 class="rainbow rainbow_text_animated">Emery Keele</h1>
+</div></center>
 
 <div class= "bbox">
 <div class="box"><a href=page1.html>
@@ -29,29 +37,23 @@
 
 </div>
 
-<script src="jquery.min.js"></script>
-<script src="sparkle.js"></script>
-  <script src="three.r119.min.js"></script>
-  <script src="p5.min.js"></script>
-  <script src="vanta.fog.min.js"></script>
-  <script>
-  VANTA.FOG({
-    el: '#vantajs',
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 1200.00,
-    minWidth: 1700.00,
-    highlightColor: 0xaadbff,
-    midtoneColor: 0xfc7aed,
-    lowlightColor: 0xfffe00,
-    baseColor: 0xe8cee8,
-    blurFactor: 0.90,
-    speed: 2.50,
-    zoom: 1.20
-  })
-  </script>
-
+<script>
+VANTA.FOG({
+  el: '#vantajs',
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 1200.00,
+  minWidth: 1700.00,
+  highlightColor: 0xaadbff,
+  midtoneColor: 0xfc7aed,
+  lowlightColor: 0xfffe00,
+  baseColor: 0xe8cee8,
+  blurFactor: 0.90,
+  speed: 2.50,
+  zoom: 1.20
+})
+</script>
 </body>
 
 
