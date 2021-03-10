@@ -3,34 +3,19 @@ body{
   overflow: hidden;
 font-family: 'NTR', sans-serif;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 50px;
   color: rgb(241, 84, 125);
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+  overflow:scroll;
 }
-
 img{
   width: 300px;
-
-}
-
-::-webkit-scrollbar {
-  width: 10px;
+  z-index: 1;
 }
 
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(#2716f1, 0.53);
-}
-
-
-  .middle {
-  text-align: center;
-  justify-content: center;
-}
 .titlebox{
   background: rgba(255, 255, 255, 0.35);
   display: flex;
@@ -44,6 +29,11 @@ img{
   margin-top: 50px;
 
 
+}
+
+  .middle {
+  text-align: center;
+  justify-content: center;
 }
 
 .rainbow {
@@ -83,7 +73,7 @@ a:link {
 a:visited {color:#cc00ff;} /* Visited link    */
 
 a:hover {
-  font-size: 40px;
+  font-size: 70px;
   color: #cc00ff;
   text-decoration: none;
 }
@@ -99,30 +89,8 @@ a:hover {
         background-position: 100% 0;
     }
 }
-.bbox {
-  background: rgba(255, 255, 255, 0.35);
-  display: flex;
-  border-style: solid;
-  border-color: rgb(255, 0, 245);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- justify-content: space-between;
- margin-top: 50px;
- margin-bottom: 35px;
-max-width: 100vw;
-overflow-x: scroll;
-}
 
 
-.box {
- display: flex;
- margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-text-align: center;
-justify-content: center;
-}
   .container .column.clear,
   .container .columns.clear {
     clear: both;

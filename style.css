@@ -52,11 +52,14 @@ body{
 
 a:link {
   width: 250px;
+  height: 130px;
  display: flex;
  justify-content: center;
+   align-items: center;
+ margin-top:40px;
 text-align: center;
 font-size: 45px;
-line-height: 130%;
+line-height: 125%;
 background-color: rgba(255, 255, 255, 0.35);
 border-style: solid;
 border-color: rgb(255, 0, 245);
@@ -67,7 +70,7 @@ border-color: rgb(255, 0, 245);
 a:visited {color:#8234da;} /* Visited link    */
 
 a:hover {
-  font-size: 70px;
+  font-size: 60px;
   color: #cc00ff;
   width: 400px;
  display: flex;
@@ -87,13 +90,11 @@ a:hover {
 }
 
 .star{
-max-width: 50px;
-margin-left: 5px;
-margin-right: 100px;
+max-width: 120px;
 position:absolute;
-top:45%;
+top:42%;
 transform: translateY(-50%);
-right:325px;
+right:265px;
 opacity: 0;
 }
 
