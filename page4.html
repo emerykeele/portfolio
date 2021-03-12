@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html><head>
-  <title>Trading Cards</title>
+  <title>Resume</title>
   <meta charset="UTF-8">
-  <meta name="description" content="trading cards" />
+  <meta name="description" content="Resume" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link href="https://fonts.googleapis.com/css2?family=Aladin&family=DM+Serif+Text:ital@1&family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&family=Piedra&family=Ramaraja&family=Roboto:ital,wght@1,700&family=Rozha+One&family=Rye&display=swap" rel="stylesheet">
@@ -13,17 +13,17 @@
     </head>
     <body>
 <div id='vantajs'>
-<div class= "middle">
-<h1  class="rainbow rainbow_text_animated outline">Resume</h1>
-</div>
+  <div class= "middle">
+  <center><div class="titlebox"><h1  class="rainbow rainbow_text_animated outline">Resume</h1>
+  </div></div></center>
 
 
 
-<div class="click-zoom">
-  <label>
-    <input type="checkbox">
-    <img src="resume.png">
-  </label>
+<img class="myImages" id="myImg" src="resume.png">
+<div id="myModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="img01">
+<div id="caption"></div>
 </div>
 
 
@@ -40,6 +40,35 @@
   <script src="three.r119.min.js"></script>
   <script src="p5.min.js"></script>
   <script src="vanta.fog.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  var modal = document.getElementById('myModal');
+  // to all images -- note I'm using a class!
+  var images = document.getElementsByClassName('myImages');
+  // the image in the modal
+  var modalImg = document.getElementById("img01");
+  // and the caption in the modal
+  var captionText = document.getElementById("caption");
+
+  // Go through all of the images with our custom class
+  for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    // and attach our click listener for this image.
+    img.onclick = function(evt) {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  </script>
+
   <script>
   VANTA.FOG({
     el: '#vantajs',

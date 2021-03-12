@@ -1,5 +1,6 @@
 body{
   background: rgb(255, 227, 250);
+  overflow: hidden;
 font-family: 'NTR', sans-serif;
   text-transform: uppercase;
   font-size: 50px;
@@ -7,31 +8,124 @@ font-family: 'NTR', sans-serif;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: scroll;
+  overflow:scroll;
 }
-
 img{
-  width: 500px;
-
-}
-
-}
-.click-zoom input[type=checkbox] {
-  display: none
-}
-
-.click-zoom img {
-  margin: 60px;
-  transition: transform 0.25s ease;
-  cursor: zoom-in
-}
-
-.click-zoom input[type=checkbox]:checked~img {
-  transform: scale(2);
-  cursor: zoom-out
+  width: 400px;
+  z-index: 1;
 }
 
 
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+  z-index: 1000;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  z-index: 1000;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.titlebox{
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  border-style: solid;
+  border-color: rgb(255, 0, 245);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1020px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+
+}
+
+  .middle {
+  text-align: center;
+  justify-content: center;
+}
 
 .rainbow {
     text-align: center;
@@ -54,12 +148,13 @@ img{
  display: flex;
  justify-content: center;
 text-align: center;
-margin-top: 20px;
+margin-top: 15px;
 font-size: 45px;
 background-color: rgba(255, 255, 255, 0.35);
 border-style: solid;
 border-color: rgb(255, 0, 245);
   color:#cc00ff;
+  z-index:-1;
 }
 
 a:link {
@@ -86,25 +181,8 @@ a:hover {
         background-position: 100% 0;
     }
 }
-.bbox {
- display: flex;
- justify-content: space-between;
- margin-top: 50px;
- margin-bottom: 35px;
-text-align: center;
-max-width: 100vw;
-overflow-x: scroll;
-}
 
 
-.box {
- display: flex;
- margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-text-align: center;
-justify-content: center;
-}
   .container .column.clear,
   .container .columns.clear {
     clear: both;
