@@ -179,7 +179,7 @@ background-color: rgba(255, 255, 255, 0.35);
 border-style: solid;
 border-color: rgb(255, 0, 245);
   color:#cc00ff;
-  z-index:-1;
+  z-index:0;
 }
 
 a:link {
