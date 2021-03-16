@@ -15,6 +15,15 @@ img{
   z-index: 1;
 }
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 #myImg {
   cursor: pointer;

@@ -14,6 +14,15 @@ img{
   width: 300px;
 }
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 .titlebox{
   background: rgba(255, 255, 255, 0.35);
@@ -71,17 +80,19 @@ img{
  display: flex;
  justify-content: center;
 text-align: center;
-margin-top: 20px;
+margin-top: 45px;
 font-size: 45px;
 background-color: rgba(255, 255, 255, 0.35);
 border-style: solid;
 border-color: rgb(255, 0, 245);
   color:#cc00ff;
+  z-index: 1;
 }
 
 a:link {
   text-decoration: none;
   color:#cc00ff;
+    z-index: 1;
 }
 
 a:visited {color:#cc00ff;} /* Visited link    */

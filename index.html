@@ -14,12 +14,15 @@
   <script src="sparkle.js"></script>
     <script src="three.r119.min.js"></script>
     <script src="p5.min.js"></script>
-    <script src="vanta.fog.min.js"></script>
   </head>
 
   <link rel="stylesheet" href="style.css">
 <body>
-<div id='vantajs'>
+  <video playsinline autoplay muted loop poster="bg.jpg" id="bgvid">
+    <source src="bg.webm" type="video/webm">
+    <source src="bg.mp4" type="video/mp4">
+      </video>
+
 
 
 <center><div class="titlebox">
@@ -37,23 +40,6 @@
 
 </div>
 
-<script>
-VANTA.FOG({
-  el: '#vantajs',
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 1200.00,
-  minWidth: 1800.00,
-  highlightColor: 0xaadbff,
-  midtoneColor: 0xfc7aed,
-  lowlightColor: 0xfffe00,
-  baseColor: 0xe8cee8,
-  blurFactor: 0.90,
-  speed: 2.50,
-  zoom: 1.20
-})
-</script>
 </body>
 
 
